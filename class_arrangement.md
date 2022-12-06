@@ -182,3 +182,35 @@ fork한 자신의 저장소에서 파일 업로드한 후, Contribute > open pul
 
 7주차
 =====
+
+git diff : 스테이징 파일상태와 작업 공간에서 현재 수정중인 상태 비교
+
+git diff -staged : commit된 파일상태와 add된 파일 상태 비교
+
+commit간 상태 비교 
+    
+    git diff 커밋해쉬1 커밋해쉬2
+    
+    git diff HEAD HEAD^
+
+9주차
+=====
+
+git stash - 깃에서 임시저장소에 저장
+
+    브랜치 이동 전에 작업 디렉토리 정리에 필요시 사용
+    
+    stash의 내용을 기존 작업 디렉토리의 내용만 복사하여 활용 가능
+
+git stash pop stash@{n} - 지정된 임시저장소 내용을 가져와 반영하고 삭제
+
+git stash apply stash@{n} - 지정된 임시저장소 내용을 가져와 반영, 작업 영역만 반영, stash 목록은 그대로
+
+git stash apply --index stash@{n} - 지정된 임시저장소 내용을 가져와 반영, 작업 영역과 스테이징 영역도 반영, stash 목록은 그대로
+
+git stash drop stash@{n} - 지정된 임시저장소 내용을 삭제
+
+git stash clear - stash 목록을 모두 제거
+
+10주차
+======
