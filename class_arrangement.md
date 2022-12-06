@@ -235,4 +235,49 @@ fast-forward: merge할 대상이 현재 커밋의 직접적인 뿌리가 되는 
     
     필요하면 합병된 이전 브랜치 삭제
     
+git merge --abort: merge 취소
 
+merge의 옵션
+
+    git merge --no-ff 브랜치명: 무조건 merge 커밋과 같이 병합되는 옵션
+    
+    git merge --ff-only 브랜치명: 현재 브랜치와 병합 대상의 관계가 fast-forward인 경우에만 병합 진행
+    
+    git merge --squash 브랜치명: 현재 브랜치에 병합 대상과의 차이나는 commit을 하나로 합쳐 커밋
+    
+    
+11주차
+======
+
+### rebase
+    
+    히스토리가 선형으로 단순해지고 좀 더 깨끗한 이력을 남김
+    
+    원래의 커밋 이력이 변경됨
+    
+    두 갈래의 브랜치에서 기존의 베이스를 수정하여 병합할 브랜치의 마지막 커밋을 새로운 베이스로 수정하는 병합
+    
+최근 커밋 메시지를 직접 입력하여 수정 - git commit -amend -m "message"
+
+13주차
+======
+
+### Reset
+
+특정 커밋으로 되돌아 가기
+    
+    git reset '옵션' '커밋ID'
+    
+Reset 옵션 
+ - --soft: reset 이후 커밋 내용만 수정되고 작업공간과 index는 이전과 같음
+ 
+ - --mixed: reset 이후 커밋 내용과 index가 같음
+ 
+ - --head: reset 이후 커밋 내용으로 작업공간과 index 모두 동일
+
+### Revert
+
+지정한 커밋을 취소해 바로 이전 상태로 되돌리는 방법
+
+    git revert '커밋ID'
+    
