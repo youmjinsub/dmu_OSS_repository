@@ -75,11 +75,36 @@ Push와 Pull 활용
 
    - 여러 개의 평행 분기를 통해 비선형 개발을 지원
 
-  #### 깃의 3단계와 3 상태
+#### 깃의 3단계와 3 상태
    
    - 작업 디렉토리(working directory), 작업 공간(work space), 작업 트리(working tree)
 
    - 스테이징 영역(staging area, stage area, index)
    
    - 깃 저장소(git repository, repository, .git dirctory)
+
+git init - 프로젝트를 git repository로 만들기 위해 사용. git repository로 만들어야 git으로 버전 관리 가능
+
+#### 파일 관리
+
+###### Tracked(관리 대상)와 Untracked(비관리대상)
+
+Tracked 파일
+
+    Unmodified(수정하지 않음)
+    
+    Modified(수정함)
+    
+    Staged(커밋으로 저장소에 기록할) 상태 중 하나
+    
+Untracked 파일
+
+    워킹 디렉토리에 있는 파일 중 스냅샷(저장소)에도 staging area에도 포함되지 않은 상태
+    
+    처음 저장소를 생성하면 모든 파일
+    
+    처음 저장소를 clone 하면 모든 파일은 Tracked이면서 Untracked 상태
+    
+    
+ 
 
