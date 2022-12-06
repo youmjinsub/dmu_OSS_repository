@@ -105,6 +105,28 @@ Untracked 파일
     
     처음 저장소를 clone 하면 모든 파일은 Tracked이면서 Untracked 상태
     
-    
- 
+3주차
+======
+
+add 취소 - git rm --cached 'name'
+
+- 파일 'name'이 untracked 됨
+
+원격저장소 복제 - git clone '주소'
+
+원격 저장소 별칭 이름 - git remote(기본 이름 origin)
+
+git pull - 현재 origin에서 기본 브랜치로 가져 오기
+
+4주차
+=====
+
+Fork - 타인의 저장소를 자신의 깃허브 원격저장소에 복사
+
+fork 한 원격 저장소 싱크 - Sync fork > update branch
+
+### open pull request
+
+fork한 자신의 저장소에서 파일 업로드한 후, Contribute > open pull request > PR 생성
+
 
