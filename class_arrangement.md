@@ -65,7 +65,7 @@ Push와 Pull 활용
 
 정의 - 컴퓨터 파일의 변경을 추적하는 버전 관리 시스템
 
-기능 
+#### 기능 
 
    - 여러 개발자가 함께 작업
     
@@ -74,3 +74,12 @@ Push와 Pull 활용
    - 소스 코드 관리에 분산 버전 제어 도구가 사용
 
    - 여러 개의 평행 분기를 통해 비선형 개발을 지원
+
+  #### 깃의 3단계와 3 상태
+   
+   - 작업 디렉토리(working directory), 작업 공간(work space), 작업 트리(working tree)
+
+   - 스테이징 영역(staging area, stage area, index)
+   
+   - 깃 저장소(git repository, repository, .git dirctory)
+
